@@ -15,8 +15,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo "🚀 Fazendo deploy da aplicação..."
-                // Aqui você pode dar docker run ou docker-compose up -d
+                echo "🚀 Deploy da aplicação"
+                sh 'docker run -d -p 5000:5000 myapp:latest'
             }
         }
     }
