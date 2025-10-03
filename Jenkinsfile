@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "🚀 Deploy da aplicação"
-                sh 'docker run -d -p 5000:5000 myapp:latest'
+                sh 'docker run -d -p 5000:5000 jenkin_python:latest'
             }
         }
     }
